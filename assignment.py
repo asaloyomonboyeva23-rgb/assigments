@@ -5,7 +5,7 @@ class BusPass:
     def __init__(self, holder, balance=0, rides=None):
         self.holder = holder 
         self.balance = balance
-        if rides is None:
+        if rides == None:
             rides = []      
         self.rides = rides
         BusPass.total_passes +=1
@@ -44,4 +44,5 @@ print(f"Total passes: {BusPass.total_passes}")
             
         
         
+
         
